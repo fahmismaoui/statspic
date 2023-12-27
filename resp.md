@@ -20,7 +20,7 @@ On calcule une probabilité, et on la compare avec un niveau de signification α
 
 __**Comment calculer la p-valeur?**__
 
-L'équation qui détermine la p-valeur, en se basant sur la statistique du test (Tobs), est très compliquée. Essentiellement, l'équation se base sur  la loi de distribution inverse (sans entrer dans les détails). Dans le passé, les statisticiens utilisaient des tableaux de conversion qui permettent d'approximer la p-valeur qui correspond à chaque Tobs. Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
+L'équation qui détermine la p-valeur, en se basant sur la statistique du test (Tobs), est très compliquée. Essentiellement, l'équation se base sur l'inverse de la fonction de distribution cumulative (sans entrer dans les détails). Dans le passé, les statisticiens utilisaient des tableaux de conversion qui permettent d'approximer la p-valeur qui correspond à chaque Tobs. Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
 
 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
