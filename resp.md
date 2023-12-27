@@ -12,14 +12,15 @@ Par la suite, on peut décider si le test est statistiquement significative selo
 
 ◉ **Méthode de la valeur critique:** 
 
-On evalue si la statistique du test (résultat de l'équation) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (souvent noté Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
+On evalue si la statistique du test (résultat de l'équation) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (souvent notée Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
 
 ◉ **Méthode de la p-valeur:** 
 
 On calcule une probabilité, et on la compare avec un niveau de signification α (classiquement 0.05). Si p-valeur < α, on rejète l'hypothèse H0. 
 
-__**Comment calculer la p-valeur**__
-L'équation qui détermine la p-valeur, en se basant sur la statistique du test (Tobs), est très compliquée. Au passé, les statisiens ont utilisés des tableaux qui permettent d'approximer 
+__**Comment calculer la p-valeur?**__
+
+L'équation qui détermine la p-valeur, en se basant sur la statistique du test (Tobs), est très compliquée. Essentiellement, l'équation se base sur  la loi de distribution inverse (sans entrer dans les détails). Dans le passé, les statisticiens utilisaient des tableaux de conversion qui permettent d'approximer la p-valeur qui correspond à chaque Tobs. Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
 
 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
