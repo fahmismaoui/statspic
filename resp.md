@@ -5,9 +5,9 @@ L'intervalle de confiance [-1.96; 1.96] correspond à un test bilatéral avec un
 
 Je vais expliquer comment choisir le niveau de signification et le sens de comparaison:
 
-◉ Nature unilatérale ou bilatérale : Cela dépond de la direction de comparaison.
-  ◌ Test Unilatéral : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
-  ◌ Test Bilatéral : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
+◉ _**Nature unilatérale ou bilatérale**_ : Cela dépond de la direction de comparaison.
+  ◌ **Test Unilatéral** : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
+  ◌ **Test Bilatéral** : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
 
 ◉ Niveau de signification α (également appelé Erreur de Type I ou de 1er espèce) : C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Cependant, une valeur trop faible peut conduire à ne pas détecter une différence réelle (je vais vous donner un exemple juste par la suite). 
 Généralement, le niveau de signification α choisi est de 0.05. 
