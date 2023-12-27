@@ -35,15 +35,15 @@ Je vais expliquer comment choisir le niveau de signification et le sens de compa
 
 ◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
 
-A noter, dans cet example, on cherche à savoir si Tobs ∉ [- infini ; Tcrit_borne_supérieure], pour rejeter l'hypothèse H0. C'est l'équivalent de dire si |Tobs| > |Tcrit| (La notion que vous allez trouvez dans le cours)
+A noter, on peut réecrire notre hypothèse sous cette forme: on veux savoir si Tobs > Tcrit (La notion que vous allez trouvez dans le cours)
 
 ◌ _**Test Bilatéral**_ : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
 
 A noter, si le test est bilatéral, l'intervale de confiance est **symétrique**.
 
-C'est à dire, la valeur absolue de la |Tcrit_borne_inférieure| = |Tcrit_borne_supérieure| 
+C'est à dire, la valeur absolue de la |Tcrit_borne_inférieure| = |Tcrit_borne_supérieure| (on va la noter en tant que |Tcrit|)
 
-En d'autres termes, on compare la statistique de test Tobs avec l'intervalle de confiance -> On vérifie si Tobs ∉ [Tcrit_borne_inférieure; Tcrit_borne_supérieure] -> On vérifie si |Tobs| > |Tcrit| (La notion que vous allez trouvez dans le cours)
+En d'autres termes, on compare la statistique du test (Tobs) avec l'intervalle de confiance -> On vérifie si Tobs ∉ [Tcrit_borne_inférieure; Tcrit_borne_supérieure] -> On vérifie si |Tobs| > |Tcrit| (La notion que vous allez trouvez dans le cours)
 
 *=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche toujours à savoir si |Tobs| > |Tcrit| pour rejeter l'hypothèse H0.*
 
@@ -53,13 +53,14 @@ C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de
 
 Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
 
-Dans le passé, les statisticiens utilisaient des tableaux de conversion pour approximer la p-valeur correspondant à chaque 
-�
-obs
-T 
-obs
-​
- . Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
+
+**Quelques remarques concernant le raisonnement statistique**
+
+Dans le passé, les statisticiens utilisaient des tableaux de conversion pour approximer la Tcrit correspondant à chaque niveau de siginfication α. Puis, on comparait la statistique du test (Tobs) avec cette Tcrit. Un exemple de tableaux de conversion (pour test de student pour 2 échantillons indépendants) est ci-dessous.
+
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/236175e4-806b-405c-9ca3-2330add3dfa2)
+
+Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
 
 Par la suite, je vais aborder chaque test à part.
 
