@@ -1,3 +1,43 @@
+__**I.Réponse directe aux questions**__
+
+Tout d'abord, il est important de souligner que l'intervalle de confiance n'est pas toujours défini comme [-1.96, 1.96]. L'intervalle de confiance dépend du niveau de signification alpha, de la nature uni/bilatérale, et, pour certains tests, du degré de liberté. Cet intervalle spécifique [-1.96, 1.96] correspond à un test bilatéral avec un niveau de signification de 0.05. Cela s'applique notamment aux tests de comparaison de proportion/moyenne à une valeur de référence, de comparaison de deux proportions, de comparaison de deux moyennes pour échantillons appariés, et de comparaison de deux moyennes pour échantillons indépendants lorsque le nombre d'observations est très élevé. Cependant, il est essentiel de noter que pour des échantillons avec un nombre d'observations plus faible, l'intervalle de confiance du test de comparaison de deux moyennes pour échantillons indépendants aura tendance à être plus large. Dans cette situation, il dépend aussi du degré de liberté (Pour ce test : ddl = n-1).
+
+Le principe de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique (par exemple : Tcrit = 1.96). Si Tobs n'appartient pas à cet intervalle de confiance :
+
+c’est-à-dire Tobs ∉ [-1.96, 1.96]
+
+c’est-à-dire Tobs < -1.96 et Tobs > 1.96
+
+c’est-à-dire |Tobs| > |Tcrit|=1.96
+
+Dans ce cas, on peut rejeter l'hypothèse H0.
+
+Une autre méthode est la détermination d’une probabilité appelée « p-valeur ». À noter qu’on ne peut réaliser ce calcul qu’en utilisant des logiciels, puisque l’équation est complexe.
+
+Ces deux méthodes s’appliquent au test Chi-deux de Pearson. La particularité du test Chi-deux c’est que la Tcrit dépend du niveau de signification et du degré de liberté qui se calcule de la façon suivante :
+
+Ddl = (r-1)(c-1) ; avec r : nombre de lignes, c : nombre de colonnes
+
+Une fois que l'on connaît le ddl et que l'on a choisi le niveau de signification, on peut utiliser un tableau de conversion pour déterminer la valeur Tcrit. 
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/51388d37-df64-4ea0-af0e-a243fc75e37e)
+
+
+
+Une fois la valeur Tobs est déterminée en utilisant l’équation du test Chi-deux, on peut comparer Tobs avec Tcrit :
+Si Tobs > Tcrit, donc on rejette l’hypothèse H0.
+
+Par exemple, si l'on veut savoir s'il y a une association entre le fait de fumer et le sexe, on va avoir un tableau 2x2 (fumeur/non-fumeur X homme/femme) :
+
+Ddl = (2 * 1) * (2 * 1) = 1
+
+Supposant qu’on a choisi alpha = 0.05, la Tcrit selon le tableau est :
+
+Tcrit = 3.841
+
+Si notre Tobs > Tcrit = 3.841, on va rejeter l’hypothèse H0, et on va dire qu'il y a une association statistiquement significative entre le fait de fumer et le sexe.
+
+__**II.Plus de détails**__
+
 **1.Principe des tests d'hypothèses paramètriques**
 
 De manière très schématique, très intuitive, et trop simplifiée, plusieurs tests statistiques paramétriques se basent sur une équation qui ressemble à ceci :
