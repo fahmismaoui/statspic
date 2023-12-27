@@ -4,7 +4,9 @@ De manière très schématique, très intuitive, et trop simplifiée, plusieurs 
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/70f603b4-7ef3-475e-9d1f-f5ecc284e1a3)
 
-L'erreur type est une mesure de dispersion, dont le calcul dépond du test statistique choisi.
+L'erreur type est une mesure de dispersion, dont le calcul dépond du test statistique choisi. Par exemple, pour le test de comparaison d'une moyenne à une valeur de référence: 
+
+Erreur type = Ecart-type / $\sqrt{n}$
 
 Par la suite, on peut décider si le test est statistiquement significative selon deux manière:
 
