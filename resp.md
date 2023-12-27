@@ -1,12 +1,24 @@
-**1.Tests d'hypothèses**
+**1.Principe des tests d'hypothèses paramètriques**
 
-De manière très schématique et simplifiée, plusieurs tests statistiques paramétriques se basent sur une équation qui ressemble à ceci :
+De manière très schématique, très intuitive, et trop simplifiée, plusieurs tests statistiques paramétriques se basent sur une équation qui ressemble à ceci :
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/70f603b4-7ef3-475e-9d1f-f5ecc284e1a3)
 
+L'erreur type est une mesure de dispersion, dont le calcul dépond du test statistique choisi.
 
+Par la suite, on peut décider si le test est statistiquement significative selon deux manière:
 
-**1.Test d'hypothèse et intervalle de confiance**
+◉ **Méthode de la valeur critique:** 
+
+On evalue si la statistique du test (résultat de l'équation) appartient ou non à un intervalle de confiance. Si cette valeur (souvent noté Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0.
+
+◉ **Méthode de la p-valeur:** 
+
+On calcule une probabilité, et on la compare avec un niveau de signification α (classiquement 0.05). Si p-valeur < α, on rejète l'hypothèse H0. 
+
+**NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
+
+**2.Test d'hypothèse et intervalle de confiance**
 
 L'intervalle de confiance dépend du __niveau de signification__ choisi (α) ainsi que de la nature __unilatérale ou bilatérale__ du test. 
 
@@ -27,7 +39,7 @@ Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut 
 Par la suite, je vais aborder chaque test à part.
 
 
-**2.Comparaison d'une proportion à une valeur de référence**
+**3.Comparaison d'une proportion à une valeur de référence**
 
 Pour ce test, l'intervalle de confiance [-1.96; 1.96] correspond à un test __bilatéral__ avec un niveau de signification __α = 0.05__.
 
