@@ -12,7 +12,7 @@ Par la suite, on peut décider si le test est statistiquement significative selo
 
 ◉ **Méthode de la valeur critique:** 
 
-On evalue si la statistique du test (résultat de l'équation) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (souvent notée Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
+On evalue si la statistique du test (résultat de l'équation, souvent notée Tobs) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
 
 ◉ **Méthode de la p-valeur:** 
 
@@ -20,7 +20,7 @@ On calcule une probabilité, et on la compare avec un niveau de signification α
 
 __**Comment calculer la p-valeur?**__
 
-L'équation qui détermine la p-valeur, en se basant sur la statistique du test (Tobs), est très compliquée. Essentiellement, l'équation se base sur l'inverse de la fonction de distribution cumulative (sans entrer dans les détails). Dans le passé, les statisticiens utilisaient des tableaux de conversion qui permettent d'approximer la p-valeur qui correspond à chaque Tobs. Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
+L'équation qui détermine la p-valeur, en se basant sur la statistique du test (Tobs), est très compliquée. Essentiellement, l'équation se base sur l'inverse de la fonction de distribution cumulative (sans entrer dans les détails). Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière rapide et précise.
 
 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
@@ -35,13 +35,31 @@ Je vais expliquer comment choisir le niveau de signification et le sens de compa
 
 ◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
 
+A noter, dans cet example, on cherche à savoir si Tobs ∉ [- infini ; Tcrit_borne_supérieure], pour rejeter l'hypothèse H0. C'est l'équivalent de dire si |Tobs| > |Tcrit| (La notion que vous allez trouvez dans le cours)
+
 ◌ _**Test Bilatéral**_ : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
+
+A noter, si le test est bilatéral, l'intervale de confiance est **symétrique**.
+
+C'est à dire, la valeur absolue de la |Tcrit_borne_inférieure| = |Tcrit_borne_supérieure| 
+
+En d'autres termes, on compare la statistique de test Tobs avec l'intervalle de confiance -> On vérifie si Tobs ∉ [Tcrit_borne_inférieure; Tcrit_borne_supérieure] -> On vérifie si |Tobs| > |Tcrit| (La notion que vous allez trouvez dans le cours)
+
+*=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche toujours à savoir si |Tobs| > |Tcrit| pour rejeter l'hypothèse H0.*
 
 ◉ __**Niveau de signification α**__ (également appelé Erreur de Type I ou de 1er espèce) : 
 
 C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Cependant, une valeur trop faible peut conduire à ne pas détecter une différence réelle (je vais vous donner un exemple juste par la suite). 
 
 Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
+
+Dans le passé, les statisticiens utilisaient des tableaux de conversion pour approximer la p-valeur correspondant à chaque 
+�
+obs
+T 
+obs
+​
+ . Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
 
 Par la suite, je vais aborder chaque test à part.
 
