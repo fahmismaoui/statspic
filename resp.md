@@ -6,17 +6,21 @@ De manière très schématique, très intuitive, et trop simplifiée, plusieurs 
 
 L'erreur type est une mesure de dispersion, dont le calcul dépond du test statistique choisi. Par exemple, pour le test de comparaison d'une moyenne à une valeur de référence: 
 
-Erreur type = Ecart-type / $\sqrt{n}$
+Erreur type = Ecart-type / racine de n , avec n: nombre d'observations
 
-Par la suite, on peut décider si le test est statistiquement significative selon deux manière:
+Par la suite, on peut décider si le test est statistiquement significative selon une des deux méthodes suivantes:
 
 ◉ **Méthode de la valeur critique:** 
 
-On evalue si la statistique du test (résultat de l'équation) appartient ou non à un intervalle de confiance. Si cette valeur (souvent noté Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0.
+On evalue si la statistique du test (résultat de l'équation) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette valeur (souvent noté Tobs) n'appartient pas cet intervalle (c'est à dire : Tobs ∉ [Tcrit_inférieure ; Tcrit_supérieure], ou bien: |Tobs| > |Tcrit|), on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
 
 ◉ **Méthode de la p-valeur:** 
 
 On calcule une probabilité, et on la compare avec un niveau de signification α (classiquement 0.05). Si p-valeur < α, on rejète l'hypothèse H0. 
+
+__**Comment calculer la p-valeur**__
+L'équation qui détermine la p-valeur, en se basant sur la statistique du test (Tobs), est très compliquée. Au passé, les statisiens ont utilisés des tableaux qui permettent d'approximer 
+
 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
 
