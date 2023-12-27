@@ -2,11 +2,11 @@
 
 De manière très schématique et simplifiée, plusieurs tests statistiques paramétriques se basent sur une équation qui ressemble à ceci :
 
-Statistique du test = (Proportion_Moyenne - Valeur de référence)/Erreur type
+Statistique du test = (Proportion_OU_Moyenne - Valeur de référence)/Erreur type
 
 ou, dans le cas de la comparaison de deux proportions ou moyennes :
 
-Statistique du test = ([Proportion_Moyenne]1 - [Proportion_Moyenne]2)/Erreur type
+Statistique du test = ([Proportion_OU_Moyenne]1 - [Proportion_OU_Moyenne]2)/Erreur type
 
 
 **1.Test d'hypothèse et intervalle de confiance**
