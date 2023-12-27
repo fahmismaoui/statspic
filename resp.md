@@ -2,7 +2,7 @@
 
 De manière très schématique et simplifiée, plusieurs tests statistiques paramétriques se basent sur une équation qui ressemble à ceci :
 
-$Statistique du test = (Proportion_Moyenne - Valeur de référence)/Erreur type$
+$"Statistique du test" = ("Proportion / Moyenne" - "Valeur de référence")/"Erreur type"$
 
 ou, dans le cas de la comparaison de deux proportions ou moyennes :
 
