@@ -1,8 +1,9 @@
 __**I.Réponse directe aux questions**__
 
-Tout d'abord, il est important de souligner que l'intervalle de confiance n'est pas toujours défini comme [-1.96, 1.96]. L'intervalle de confiance dépend du niveau de signification α, de la nature uni/bilatérale, et, pour certains tests, du degré de liberté. Cet intervalle spécifique [-1.96, 1.96] correspond à un test bilatéral avec un niveau de signification α de 0.05. Cela s'applique notamment aux tests de comparaison de proportion/moyenne à une valeur de référence, de comparaison de deux proportions, de comparaison de deux moyennes pour échantillons appariés, et de comparaison de deux moyennes pour échantillons indépendants lorsque le nombre d'observations est très élevé. Cependant, il est essentiel de noter que pour des échantillons avec un nombre d'observations plus faible, l'intervalle de confiance du test de comparaison de deux moyennes pour échantillons indépendants aura tendance à être plus large. Dans cette situation, il dépend aussi du degré de liberté (Pour ce test : ddl = n-1).
+Tout d'abord, il est important de souligner que l'intervalle de confiance n'est pas toujours défini comme [-1.96, 1.96]. L'intervalle de confiance dépend du niveau de signification α, de la nature uni/bilatérale, et, pour certains tests, du degré de liberté. Cet intervalle spécifique [-1.96, 1.96] correspond à un test bilatéral avec un niveau de signification α de 0.05. Cela s'applique notamment aux tests de comparaison de proportion/moyenne à une valeur de référence, de comparaison de deux proportions, et de comparaison de deux moyennes (test de Student pour échantillons appariés/indépendants) lorsque le nombre d'observations est très élevé. 
+Cependant, il est essentiel de noter que pour des échantillons avec un nombre d'observations plus faible, l'intervalle de confiance du test de Student aura tendance à être plus large. Dans cette situation, il dépend aussi du degré de liberté (Pour ce test : ddl = n-1).
 
-Le principe de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique (par exemple : Tcrit = 1.96). Si Tobs n'appartient pas à cet intervalle de confiance :
+Le principe général de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique (par exemple : Tcrit = 1.96). Si Tobs n'appartient pas à cet intervalle de confiance :
 
 c’est-à-dire Tobs ∉ [-1.96, 1.96]
 
@@ -14,7 +15,7 @@ Dans ce cas, on peut rejeter l'hypothèse H0.
 
 Une autre méthode est la détermination d’une probabilité appelée « p-valeur », qu'on va comparer avec le niveau de signification α. À noter qu’on ne peut réaliser ce calcul qu’en utilisant des logiciels, puisque l’équation est complexe.
 
-Ces deux méthodes s’appliquent au test Chi-deux de Pearson. La particularité du test Chi-deux c’est que la Tcrit dépend du niveau de signification α et du degré de liberté qui se calcule de la façon suivante :
+Ces deux méthodes s’appliquent au test Chi-deux de Pearson. Le principe de ce test repose sur la comparaison des valeurs observées avec des valeurs théoriques attendues si H0 est vrai. Une particularité du test Chi-deux c’est que la Tcrit dépend du niveau de signification α et du degré de liberté qui se calcule de la façon suivante :
 
 Ddl = (r-1)(c-1) ; avec r : nombre de lignes, c : nombre de colonnes
 
@@ -32,9 +33,11 @@ Ddl = (2 * 1) * (2 * 1) = 1
 
 Supposant qu’on a choisi alpha = 0.05, la Tcrit selon le tableau est :
 
-Tcrit = 3.841
+Tcrit = 3.841 (C'est la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 
 Si notre Tobs > Tcrit = 3.841, on va rejeter l’hypothèse H0, et on va dire qu'il y a une association statistiquement significative entre le fait de fumer et le sexe.
+
+(Ce que nous avons fait ici est la comparaison avec la Tcrit, c'est à dire la comparaison avec la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 
 __**II.Plus de détails**__
 
@@ -67,15 +70,28 @@ L'équation qui détermine la p-valeur, en se basant sur la statistique du test 
 
 **2.Test d'hypothèse et intervalle de confiance**
 
-L'intervalle de confiance dépend du __niveau de signification__ choisi (α) ainsi que de la nature __unilatérale ou bilatérale__ du test. 
+L'intervalle de confiance (ou intervalle d'acceptation) dépend du __niveau de signification__ choisi (α) ainsi que de la nature __unilatérale ou bilatérale__ du test. 
 
-Je vais expliquer comment choisir le niveau de signification et le sens de comparaison:
+Je vais expliquer comment choisir le niveau de signification et la nature uni/bilatérale:
+
+◉ __**Niveau de signification α**__ (également appelé Erreur de Type I ou de 1er espèce) : 
+
+C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Cependant, une valeur trop faible peut conduire à ne pas détecter une différence réelle (je vais vous donner un exemple juste par la suite). 
+
+Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
+
 
 ◉ __**Nature unilatérale ou bilatérale**__ : Cela dépond de la direction de comparaison.
 
 ◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
 
-A noter, on peut réecrire notre hypothèse sous cette forme: on veux savoir si Tobs > Tcrit (La notion que vous allez trouvez dans le cours)
+A noter, la régle de décision dans ce cas est de voir si Tobs > Tcrit.
+
+Dans le cas contraire, si on a voulu savoir si proportion(A) < valeur de référence, la règle de décision serai Tobs < Tcrit.
+
+Pour ne pas compliquer la vie, on peut décider dans les deux situations (proportion(A) > valeur de référence et proportion(A) < valeur de référence) par la règle suivante:
+
+Si |Tobs| > |Tcrit| -> on rejète H0.
 
 ◌ _**Test Bilatéral**_ : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
 
@@ -83,15 +99,20 @@ A noter, si le test est bilatéral, l'intervale de confiance est **symétrique**
 
 C'est à dire, la valeur absolue de la |Tcrit_borne_inférieure| = |Tcrit_borne_supérieure| (on va la noter en tant que |Tcrit|)
 
-En d'autres termes, on compare la statistique du test (Tobs) avec l'intervalle de confiance -> On vérifie si Tobs ∉ [Tcrit_borne_inférieure; Tcrit_borne_supérieure] -> On vérifie si |Tobs| > |Tcrit| (La notion que vous allez trouvez dans le cours)
+Exemple: L'intervalle de confiance (d'acceptation) du test Z de comparaison d'une proportion à une valeur de réfèrence qui est **bilatéral** avec un niveau de signification **α = 0.05** est égale à [-1.96, 1.96].
 
-*=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche toujours à savoir si |Tobs| > |Tcrit| pour rejeter l'hypothèse H0.*
+On peut voir que c'est un intervalle symétrique 
 
-◉ __**Niveau de signification α**__ (également appelé Erreur de Type I ou de 1er espèce) : 
+|Tcrit_borne_inférieure| = |Tcrit_borne_supérieure|
+|-1.96| = |1.96|
 
-C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Cependant, une valeur trop faible peut conduire à ne pas détecter une différence réelle (je vais vous donner un exemple juste par la suite). 
+Dans ce cas, on veux savoir si Tobs ∉ [-1.96, 1.96] (∉: n'appartient pas à) pour rejeter H0.
 
-Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
+c’est-à-dire Tobs < -1.96 et Tobs > 1.96
+
+c’est-à-dire |Tobs| > |Tcrit|=1.96 pour rejeter l'hypothèse H0.
+
+__*=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche à savoir si |Tobs| > |Tcrit| pour rejeter l'hypothèse H0.*__
 
 
 **Quelques remarques concernant le raisonnement statistique**
