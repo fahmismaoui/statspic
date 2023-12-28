@@ -117,12 +117,7 @@ Hypothèse Nulle (H0) : La concentration du produit toxique A dans l'aliment est
 
 Hypothèse Alternative (H1) : La concentration du produit toxique A dans l'aliment dépasse les normes de sécurité établies.
 
-Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique).
-
-
-Considérons une étude clinique préliminaire évaluant un nouveau traitement contre une maladie grave et potentiellement mortelle. Dans ce contexte, on ne veut pas manquer de détecter une amélioration de la santé des patients suite au traitement. Ici, on peut choisir un niveau de signification légèrement plus élevé (par exemple α = 0.1), même si ça va augmenter notre risque de se tromper (en concluant que le médicament est efficae alors qu'il ne l'est pas en réalité).
-
-Imaginons une étude clinique évaluant un nouveau traitement contre une maladie grave et potentiellement mortelle. Dans ce contexte, les conséquences d'une erreur de type I (conclure à tort que le traitement est efficace) sont moins graves que celles d'une erreur de type II (ne pas détecter une efficacité réelle du traitement). Dans cette situation, les chercheurs pourraient choisir un niveau de signification plus élevé, tel que α = 0.1, pour minimiser le risque de manquer une amélioration significative de la santé des patients.
+Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité).
 
 
 __Exemple pratique avec α = 0.01__
@@ -136,12 +131,6 @@ H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace q
 H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs existants, offrant une meilleure protection.
 
 Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de sécurité est efficace alors qu'il ne l'est pas) peut avoir des conséquences dévastatrices. Ici, on peut choisir un niveau de signification strict tel que α = 0.01, voir même α = 0.001. 
-
-
-
-d'un nouveau modèle de voiture à conduite automatique. Ici, on veut savoir si son système d'évitement de collision est efficace.
-
-Implications : Si on conclu à tort que le système est efficace alors qu'il ne l'est pas pourraient entraîner des accidents graves. Dans ce cas, on peut choisir un niveau de signification strict comme α = 0.01 pour garantir un haut niveau de confiance dans les affirmations de sécurité.
 
 
 
