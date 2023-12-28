@@ -171,9 +171,9 @@ Une particularité de la loi de distribution de Student est qu'elle devient trè
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/4a1e16dd-043c-48d5-97fa-4dad8689ccde)
 
-J'ai fait expré de mettre les figures en anglais, afin de vous familiariser avec les termes anglais:
+J'ai délibérément choisi de présenter les figures en anglais afin de vous familiariser avec les termes anglais:
 
-_**Annotation**_
+_**Annotation des figures**_
 
 _df : degree of freedom (degré de liberté ou ddl)_
 
