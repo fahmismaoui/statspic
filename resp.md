@@ -83,13 +83,11 @@ Par la suite, on peut décider si le test est statistiquement significative selo
 
 On évalue si la statistique du test (résultat de l'équation, souvent notée Tobs) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
 
------------------------------------------------------------------------------------------------------------------------
 
 ◉ **Méthode de la p-valeur:** 
 
 On calcule une probabilité, et on la compare avec un niveau de signification α (classiquement 0.05). Si p-valeur < α, on rejète l'hypothèse H0. 
 
------------------------------------------------------------------------------------------------------------------------
 
 __**Comment calculer la p-valeur?**__
 
@@ -145,7 +143,6 @@ _c'est-à-dire: Efficacité nouveau dispositif > Efficacité dispositifs existan
 
 _Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de sécurité est efficace alors qu'il ne l'est pas) peut avoir des conséquences dévastatrices. Ici, on peut choisir un niveau de signification strict tel que α = 0.01, voir même α = 0.001._
 
------------------------------------------------------------------------------------------------------------------------
 
 ◉ __**Nature unilatérale ou bilatérale**__ : Cela dépond de la direction de comparaison.
 
@@ -161,11 +158,10 @@ Dans le cas contraire, si on a voulu savoir si proportion(A) < valeur de référ
 
 _Exemple: Supposant qu'on sait la proportion des cas graves du COVID-19 à travers des études antérieures (notre valeur de référence).  On veux savoir si la proportion des cas graves du COVID-19 a diminué après une compagne de vaccination._
 
------------------------------------------------------------------------------------------------------------------------
 
-Pour ne pas compliquer la vie, on peut décider dans les deux situations (proportion(A) > valeur de référence et proportion(A) < valeur de référence) par la règle suivante:
+**Pour ne pas compliquer la vie, on peut décider dans les deux situations (proportion(A) > valeur de référence et proportion(A) < valeur de référence) par la règle suivante:**
 
-Si |Tobs| > |Tcrit| -> on rejète H0.
+**Si |Tobs| > |Tcrit| -> on rejète H0.**
 
 -----------------------------------------------------------------------------------------------------------------------
 
