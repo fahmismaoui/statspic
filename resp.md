@@ -137,6 +137,14 @@ c’est-à-dire |Tobs| > |Tcrit|=1.96 pour rejeter l'hypothèse H0.
 
 __*=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche à savoir si |Tobs| > |Tcrit| pour rejeter l'hypothèse H0.*__
 
+**Pour résumer**
+
+Pour un test bilatéral: l'intervalle de confiance est [-Tcrit, +Tcrit]
+
+Pour un test unilateral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon la direction de la comparaison
+
+Dans les deux cas: règle de décision: |Tobs| > |Tcrit| pour rejeter l'hypothèse H0
+
 _*NB*_
 
 Pour certains tests, comme le test de Student (comparaison de moyennes), l'intervalle de confiance dépond aussi d'un paramètre appelé **degré de liberté (ddl)** (dans le cas du test de Student: ddl = n - 1 , avec n: nombre d'observations).
