@@ -107,7 +107,7 @@ __Exemple pratique avec α = 0.1__
 
 Considérons une étude dans le domaine de la sécurité alimentaire, évaluant la présence d'un produit toxique A dans un aliment commercialisé.
 
-Scénario :
+Hypothèses :
 
 Hypothèse Nulle (H0) : La concentration du produit toxique A dans l'aliment est conforme aux normes de sécurité établies.
 
