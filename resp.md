@@ -117,6 +117,8 @@ Si |Tobs| > |Tcrit| -> on rejète H0.
 
 ◌ _**Test Bilatéral**_ : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
 
+_Exemple :  On veux savoir si la proportion des fumeurs dans notre pays (on effectue un échantillonnage) est différente de celles dans l'Algérie (valeur de référence connu à travers des études publiés).
+
 A noter, si le test est bilatéral, l'intervale de confiance est **symétrique**.
 
 C'est à dire, la valeur absolue de la |Tcrit_borne_inférieure| = |Tcrit_borne_supérieure| (on va la noter en tant que |Tcrit|)
