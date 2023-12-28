@@ -163,7 +163,7 @@ _Exemple: Supposant qu'on sait la proportion des cas graves du COVID-19 à trave
 
 **Si |Tobs| > |Tcrit| -> on rejète H0.**
 
------------------------------------------------------------------------------------------------------------------------
+*************************************
 
 ◌ _**Test Bilatéral**_ : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
 
