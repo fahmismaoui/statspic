@@ -105,28 +105,28 @@ C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de
 
 __Exemple pratique avec α = 0.1__
 
-Considérons une étude dans le domaine de la sécurité alimentaire, évaluant la présence d'un produit toxique A dans un aliment commercialisé.
+_Considérons une étude dans le domaine de la sécurité alimentaire, évaluant la présence d'un produit toxique A dans un aliment commercialisé._
 
-Hypothèses :
+_Hypothèses :_
 
-Hypothèse Nulle (H0) : La concentration du produit toxique A dans l'aliment est conforme aux normes de sécurité établies.
+_Hypothèse Nulle (H0) : La concentration du produit toxique A dans l'aliment est conforme aux normes de sécurité établies._
 
-Hypothèse Alternative (H1) : La concentration du produit toxique A dans l'aliment dépasse les normes de sécurité établies.
+_Hypothèse Alternative (H1) : La concentration du produit toxique A dans l'aliment dépasse les normes de sécurité établies._
 
-Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité).
+_Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité)._
 
 
 __Exemple pratique avec α = 0.01__
 
-Considérons une étude dont les conclusions pourraient avoir un impact significatif sur la sécurité publique, telle que l'évaluation de l'efficacité d'un nouveau dispositif de sécurité dans une centrale nucléaire. 
+_Considérons une étude dont les conclusions pourraient avoir un impact significatif sur la sécurité publique, telle que l'évaluation de l'efficacité d'un nouveau dispositif de sécurité dans une centrale nucléaire._
 
-Hypothèses :
+_Hypothèses :_
 
-H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace que les dispositifs existants, ne présentant aucune amélioration significative.
+_H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace que les dispositifs existants, ne présentant aucune amélioration significative._
 
-H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs existants, offrant une meilleure protection.
+_H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs existants, offrant une meilleure protection._
 
-Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de sécurité est efficace alors qu'il ne l'est pas) peut avoir des conséquences dévastatrices. Ici, on peut choisir un niveau de signification strict tel que α = 0.01, voir même α = 0.001. 
+_Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de sécurité est efficace alors qu'il ne l'est pas) peut avoir des conséquences dévastatrices. Ici, on peut choisir un niveau de signification strict tel que α = 0.01, voir même α = 0.001._
 
 
 
