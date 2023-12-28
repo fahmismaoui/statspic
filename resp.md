@@ -22,7 +22,7 @@ Concernant le test Chi-deux de Pearson: Le principe de ce test repose sur la com
 
 ddl = (r-1)(c-1) ; avec r : nombre de lignes, c : nombre de colonnes
 
-Une fois qu'on connait le ddl et que on a choisi le niveau de signification α, on peut utiliser un tableau de conversion pour déterminer la valeur Tcrit (le tableau suivant est spécifique du test Chi-deux). 
+Une fois qu'on connait le ddl et qu'on a choisi le niveau de signification α, on peut utiliser un tableau de conversion pour déterminer la valeur Tcrit (le tableau suivant est spécifique du test Chi-deux). 
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/dd51c338-2d99-471a-bfbe-b87eb45cecdb)
 
