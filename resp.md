@@ -223,11 +223,11 @@ Tout test qui se base sur une **loi de distribution normale** (de moyenne 0 et d
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/42fb152e-6c28-4aa9-87fb-b92c2200bc53)
 
-Par exemple, le test Z de proportions (1 proportion à une valeur de référence, et 2 proportions) se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
+Par exemple, le test Z de proportions (pour comparer 1 proportion à une valeur de référence, ou comparer 2 proportions) se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
 
 Cependant, le test de comparaison de moyenne (test de Student) se base sur une loi différente : la loi de distribution de Student. L'aspect de la courbe de distribution dans ce cas dépend du degré de liberté (et donc du nombre d'observations, puisque ici ddl=n-1). C'est pourquoi l'intervalle de confiance (d'acceptation) varie en fonction du ddl pour ce test.
 
-Une particularité de la loi de distribution de Student est qu'elle devient très similaire à une loi de distribution normale lorsque le ddl (et donc n) est très élevé. Afin de mieux expliquer ces concepts, j'ai généré les figures suivantes.
+Une particularité de la loi de distribution de Student est qu'elle devient très similaire à une loi de distribution normale lorsque le ddl (et donc n) est élevé. Afin de mieux expliquer ces concepts, j'ai généré les figures suivantes.
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/85ab7969-1e1f-403b-b7cd-aa323704c915)
 
