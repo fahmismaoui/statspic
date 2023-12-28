@@ -1,4 +1,4 @@
-![image](https://github.com/fahmismaoui/statspic/assets/64672385/408fa8a8-a180-416c-935e-dbc35215f32a)![image](https://github.com/fahmismaoui/statspic/assets/64672385/544c46ae-d518-42b0-81c5-c36e0d181844)__**I.Réponse directe aux questions**__
+__**I.Réponse directe aux questions**__
 
 Tout d'abord, il est important de souligner que l'intervalle de confiance n'est pas toujours défini comme [-1.96, 1.96]. L'intervalle de confiance dépend du niveau de signification α, de la nature uni/bilatérale, et, pour certains tests, du degré de liberté. Cet intervalle spécifique [-1.96, 1.96] correspond à un test bilatéral avec un niveau de signification α de 0.05. Cela s'applique notamment aux test de comparaison d'une proportion à une valeur de référence, test de comparaison de deux proportions, ainsi que les tests de comparaison de moyennes (tests T de Student, que ce soit pour échantillons indépendants ou appariées) lorsque le nombre d'observations est élevé. 
 
