@@ -55,6 +55,8 @@ Par la suite, on peut rejeter l'hypothèse H0 si Tobs n'appartient pas à l'inte
 
 Pour plus de détails, vous pouvez consulter la partie suivante, dans la quelle j'entre un peu dans certains détails.
 
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 __**II.Plus de détails**__
 
@@ -73,15 +75,21 @@ Erreur type = Ecart-type / racine de n , avec n: nombre d'observations
 __**NB :**__
 __Je rappelle que ces équations sont trop simplifiées, et qu'il y a les tests statistiques avec des équations différentes à ça (ex: ANOVA). Si vous voulez savoir l'équation de chaque test, veuillez consulter le cours.__
 
+-----------------------------------------------------------------------------------------------------------------------
+
 Par la suite, on peut décider si le test est statistiquement significative selon une des deux méthodes suivantes:
 
 ◉ **Méthode de la valeur critique:** 
 
 On évalue si la statistique du test (résultat de l'équation, souvent notée Tobs) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
 
+-----------------------------------------------------------------------------------------------------------------------
+
 ◉ **Méthode de la p-valeur:** 
 
 On calcule une probabilité, et on la compare avec un niveau de signification α (classiquement 0.05). Si p-valeur < α, on rejète l'hypothèse H0. 
+
+-----------------------------------------------------------------------------------------------------------------------
 
 __**Comment calculer la p-valeur?**__
 
@@ -90,6 +98,7 @@ L'équation qui détermine la p-valeur, en se basant sur la statistique du test 
 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
 
+-----------------------------------------------------------------------------------------------------------------------
 
 **2.Test d'hypothèse et intervalle de confiance (d'acceptation)**
 
@@ -102,6 +111,7 @@ Je vais expliquer comment choisir le niveau de signification et la nature uni/bi
 
 C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
 
+-----------------------------------------------------------------------------------------------------------------------
 
 __Exemple pratique avec α = 0.1__
 
@@ -119,6 +129,7 @@ _c'est-à-dire: Concentration du produit toxique A > seuil autorisé_
 
 _Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité)._
 
+-----------------------------------------------------------------------------------------------------------------------
 
 __Exemple pratique avec α = 0.01__
 
@@ -136,7 +147,7 @@ _c'est-à-dire: Efficacité nouveau dispositif > Efficacité dispositifs existan
 
 _Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de sécurité est efficace alors qu'il ne l'est pas) peut avoir des conséquences dévastatrices. Ici, on peut choisir un niveau de signification strict tel que α = 0.01, voir même α = 0.001._
 
-
+-----------------------------------------------------------------------------------------------------------------------
 
 ◉ __**Nature unilatérale ou bilatérale**__ : Cela dépond de la direction de comparaison.
 
@@ -152,9 +163,13 @@ Dans le cas contraire, si on a voulu savoir si proportion(A) < valeur de référ
 
 _Exemple: Supposant qu'on sait la proportion des cas graves du COVID-19 à travers des études antérieures (notre valeur de référence).  On veux savoir si la proportion des cas graves du COVID-19 a diminué après une compagne de vaccination._
 
+-----------------------------------------------------------------------------------------------------------------------
+
 Pour ne pas compliquer la vie, on peut décider dans les deux situations (proportion(A) > valeur de référence et proportion(A) < valeur de référence) par la règle suivante:
 
 Si |Tobs| > |Tcrit| -> on rejète H0.
+
+-----------------------------------------------------------------------------------------------------------------------
 
 ◌ _**Test Bilatéral**_ : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
 
@@ -180,6 +195,8 @@ c’est-à-dire |Tobs| > |Tcrit|=1.96 pour rejeter l'hypothèse H0.
 
 __*=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche à savoir si |Tobs| > |Tcrit| pour rejeter l'hypothèse H0.*__
 
+-----------------------------------------------------------------------------------------------------------------------
+
 **Pour résumer**
 
 Pour un test bilatéral: l'intervalle de confiance est [-Tcrit, +Tcrit]
@@ -192,7 +209,7 @@ _*NB*_
 
 Pour certains tests, comme le test de Student (comparaison de moyennes), l'intervalle de confiance dépond aussi d'un paramètre appelé **degré de liberté (ddl)** (dans le cas du test de Student: ddl = n - 1 , avec n: nombre d'observations).
 
-
+-----------------------------------------------------------------------------------------------------------------------
 
 **Quelques remarques concernant le raisonnement statistique**
 
@@ -202,6 +219,7 @@ Dans le passé, les statisticiens utilisaient des tableaux de conversion pour ap
 
 Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
 
+-----------------------------------------------------------------------------------------------------------------------
 
 **Pourquoi l'intervalle de confiance peut varier entre les tests statistiques?**
 
@@ -238,6 +256,7 @@ Dans le tableau de conversion suivant (spécifique pour un test de Student bilat
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/7aaa8773-cc68-47f8-aed8-84e28105fb8d)
 
+-----------------------------------------------------------------------------------------------------------------------
 
 **3.Autres tests statistiques**
 
