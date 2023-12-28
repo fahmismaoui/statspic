@@ -6,7 +6,7 @@ Cependant, il est essentiel de noter que si le nombre d'observations (n) est fai
 
 Le principe général de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique (par exemple, Tcrit = 1.96). Si Tobs n'appartient pas à cet intervalle de confiance :
 
-c’est-à-dire Tobs ∉ [-Tcrit , +Tcrit] (∉: n'appartient pas à)
+c’est-à-dire Tobs ∉ [-Tcrit , +Tcrit] (avec ∉: n'appartient pas à)
 
 c’est-à-dire Tobs ∉ [-1.96, 1.96]
 
