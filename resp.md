@@ -99,13 +99,13 @@ Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut 
 
 ◉ __**Nature unilatérale ou bilatérale**__ : Cela dépond de la direction de comparaison.
 
-◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > proportion(B).
+◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
 
 A noter, la régle de décision dans ce cas est de voir si Tobs > Tcrit.
 
-_Exemple: On veux savoir si un traitement A a augmenté la proportion des survivant du cancer de poumon après 1 ans du traitement par rapport à un traitement B de référence (Gold Standard). Dans ce cas, on veux savoir si:_
+_Exemple: Supposant qu'on connait la proportion des survivant d'un cancer rare après 1 sans traitement (valeur de référence), à travers des données de la litérature. On veux savoir si un médicament A a augmenté la proportion des survivant du cancer de poumon après 1 ans du traitement. Dans ce cas, on veux savoir si:_
 
-_Proportion des survivant après 1 an (traitement A) > Proportion des survivant après 1 an (traitement B de référence)._
+_Proportion des survivants après 1 an (traitement A) > valeur de référence = Proportion des survivants après 1 an (sans traitement)._
 
 Dans le cas contraire, si on a voulu savoir si proportion(A) < valeur de référence, la règle de décision serai Tobs < Tcrit.
 
