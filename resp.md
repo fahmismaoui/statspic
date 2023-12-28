@@ -111,7 +111,11 @@ _Hypothèses :_
 
 _Hypothèse Nulle (H0) : La concentration du produit toxique A dans l'aliment est conforme aux normes de sécurité établies._
 
+_c'est-à-dire: Concentration du produit toxique A ≤ seuils authorisés_
+
 _Hypothèse Alternative (H1) : La concentration du produit toxique A dans l'aliment dépasse les normes de sécurité établies._
+
+_c'est-à-dire: Concentration du produit toxique A > seuils authorisés_
 
 _Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité)._
 
@@ -126,7 +130,7 @@ _H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace 
 
 _c'est-à-dire: Efficacité nouveau dispositif ≤ Efficacité dispositifs existants_
 
-_H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs de sécurité existants.
+_H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs de sécurité existants._
 
 _c'est-à-dire: Efficacité nouveau dispositif > Efficacité dispositifs existants_
 
