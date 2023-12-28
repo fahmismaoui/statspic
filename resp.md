@@ -53,6 +53,9 @@ L'erreur type est une mesure de dispersion, dont le calcul dépond du test stati
 
 Erreur type = Ecart-type / racine de n , avec n: nombre d'observations
 
+__**NB**__
+__Je rappelle que ces equations sont trop simplifiées, si vous voulez savoir les equations de chaque test, veuillez consulter le cours.__
+
 Par la suite, on peut décider si le test est statistiquement significative selon une des deux méthodes suivantes:
 
 ◉ **Méthode de la valeur critique:** 
@@ -70,7 +73,7 @@ L'équation qui détermine la p-valeur, en se basant sur la statistique du test 
 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
 
-**2.Test d'hypothèse et intervalle de confiance**
+**2.Test d'hypothèse et intervalle de confiance (d'acceptation)**
 
 L'intervalle de confiance (ou intervalle d'acceptation) dépend du __niveau de signification__ choisi (α) ainsi que de la nature __unilatérale ou bilatérale__ du test. 
 
@@ -131,16 +134,16 @@ Dans le passé, les statisticiens utilisaient des tableaux de conversion pour ap
 Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
 
 
-**Pourquoi l'intervalle de confiance peut varier entre les tests statistiques**
+**Pourquoi l'intervalle de confiance peut varier entre les tests statistiques?**
 
-Sans entrer trop dans les détails, il est crucial de comprendre que les tests statistiques mentionnés ci-dessus reposent sur des lois de distribution spécifiques.
+Sans entrer trop dans les détails, il est crucial de comprendre que les **tests statistiques paramétriques** mentionnés ci-dessus reposent sur des **lois de distribution** spécifiques.
+En effet, par définition, un test paramétrique est un test statistique qui suppose une **distribution spécifique** des données sous-jacentes.
 
-Tout test qui suit une loi de distribution normale (de moyenne 0 et d'écart-type 1, notée N(0,1)), présente les mêmes intervalles de confiance (d'acceptation). Pour expliquer comment cet intervalle de confiance dépend des paramètres alpha et de la nature uni/bilatérale, j’ai créé les visualisations suivantes.
+Tout test qui se base sur une **loi de distribution normale** (de moyenne 0 et d'écart-type 1, notée N(0,1)), présente les mêmes intervalles de confiance (d'acceptation). Pour expliquer comment cet intervalle de confiance dépend des paramètres alpha et de la nature uni/bilatérale, j’ai créé les visualisations suivantes.
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/42fb152e-6c28-4aa9-87fb-b92c2200bc53)
 
-
-Par exemple, le test Z de proportion se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Cependant, pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
+Par exemple, le test Z de proportions (1 proportion à une valeur de référence, et 2 proportions) se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Cependant, pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
 
 Cependant, le test de comparaison de moyenne (test de Student) se base sur une loi différente : la loi de distribution de Student. L'aspect de la courbe de distribution dans ce cas dépend du degré de liberté (et donc du nombre d'observations, puisque ici ddl=n-1). C'est pourquoi l'intervalle de confiance (d'acceptation) varie en fonction du ddl pour ce test.
 
@@ -152,19 +155,15 @@ Dans le tableau de conversion suivant (spécifique pour un test de Student bilat
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/7aaa8773-cc68-47f8-aed8-84e28105fb8d)
 
 
+**3.Autres tests statistiques**
 
+Il existe des tests non-paramètriques qu'on peut utiliser si on ne peut pas utiliser les tests paramètriques (par exemple, si la condition de Normalité des observations n'est pas valide).
 
+Ces tests ne se basent pas sur une loi de distribution spécifique (ex: Loi normale, Loi de Student), et sont moins robustes que les tests paramétriques.
 
-Par la suite, je vais aborder chaque test à part.
+Ex: Test de Mann-Whitney: équivalent non-paramétrique du test de Student pour 2 échantillons indépendants
 
-
-**3.Comparaison d'une proportion à une valeur de référence**
-
-Pour ce test, l'intervalle de confiance [-1.96; 1.96] correspond à un test __bilatéral__ avec un niveau de signification __α = 0.05__.
-
-Pour illustrer comment l’intervalle de confiance dépond des paramètres alpha et de la nature uni/bilatérale du test de comparaison d'une proportion, j’ai créé les visualisations suivantes.
-![image](https://github.com/fahmismaoui/statspic/assets/64672385/42fb152e-6c28-4aa9-87fb-b92c2200bc53)
-
+Ex: Test de Wilcoxon: équivalent non-paramétrique du test de Student pour 2 échantillons appariées
 
 
 
