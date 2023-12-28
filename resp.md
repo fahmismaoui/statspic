@@ -122,7 +122,7 @@ _Considérons une étude dont les conclusions pourraient avoir un impact signifi
 
 _Hypothèses :_
 
-_H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace ou moins efficace que les dispositifs existants, ne présentant aucune amélioration significative._
+_H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace ou moins efficace que les dispositifs de sécurité existants._
 
 _c'est-à-dire: Efficacité nouveau dispositif ≤ Efficacité dispositifs existants_
 
