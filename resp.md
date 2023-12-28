@@ -71,7 +71,7 @@ L'erreur type est une mesure de dispersion, dont le calcul dépond du test stati
 Erreur type = Ecart-type / racine de n , avec n: nombre d'observations
 
 __**NB**__
-__Je rappelle que ces equations sont trop simplifiées, si vous voulez savoir les equations de chaque test, veuillez consulter le cours.__
+__Je rappelle que ces équations sont trop simplifiées, si vous voulez savoir les equations de chaque test, veuillez consulter le cours.__
 
 Par la suite, on peut décider si le test est statistiquement significative selon une des deux méthodes suivantes:
 
