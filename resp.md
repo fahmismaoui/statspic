@@ -111,7 +111,6 @@ Je vais expliquer comment choisir le niveau de signification et la nature uni/bi
 
 C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
 
------------------------------------------------------------------------------------------------------------------------
 
 __Exemple pratique avec α = 0.1__
 
@@ -129,7 +128,6 @@ _c'est-à-dire: Concentration du produit toxique A > seuil autorisé_
 
 _Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité)._
 
------------------------------------------------------------------------------------------------------------------------
 
 __Exemple pratique avec α = 0.01__
 
