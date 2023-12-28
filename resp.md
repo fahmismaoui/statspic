@@ -53,6 +53,8 @@ Pour un test unilateral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon l
 
 Par la suite, on peut rejeter l'hypothèse H0 si Tobs n'appartient pas à l'intervalle de confiance, ou tout simplement si |Tobs| > |Tcrit|.
 
+Pour plus de détails, vous pouvez consulter la partie suivante, dans la quelle j'entre un peu dans certains détails.
+
 
 __**II.Plus de détails**__
 
