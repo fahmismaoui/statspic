@@ -171,7 +171,7 @@ Tout test qui se base sur une **loi de distribution normale** (de moyenne 0 et d
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/42fb152e-6c28-4aa9-87fb-b92c2200bc53)
 
-Par exemple, le test Z de proportions (1 proportion à une valeur de référence, et 2 proportions) se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Cependant, pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
+Par exemple, le test Z de proportions (1 proportion à une valeur de référence, et 2 proportions) se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
 
 Cependant, le test de comparaison de moyenne (test de Student) se base sur une loi différente : la loi de distribution de Student. L'aspect de la courbe de distribution dans ce cas dépend du degré de liberté (et donc du nombre d'observations, puisque ici ddl=n-1). C'est pourquoi l'intervalle de confiance (d'acceptation) varie en fonction du ddl pour ce test.
 
@@ -193,7 +193,7 @@ _Normal distribution : Distribution de la loi de Normale_
 
 _Density : Densité de probabilité (je rappelle qu'on parle de loi de distribution de probabilité, appelé en anglais: probability distribution funtion)_
 
-Dans le tableau de conversion suivant (spécifique pour un test de Student bilatéral), on peut observer que |Tcrit| pour α = 0.05 tend à s'approcher de la valeur 1.96 à mesure que le ddl augmente (n augmente), correspondant à |Tcrit| d'un test qui suit la loi de distribution normale avec une comparaison bilatérale et α = 0.05. Ainsi, avec un nombre élevé d'échantillons, l'intervalle pour le test de Student devient presque équivalent à [-1.96, 1.96].
+Dans le tableau de conversion suivant (spécifique pour un test de Student bilatéral), on peut observer que |Tcrit| pour α = 0.05 tend à s'approcher de la valeur 1.96 lorsque le ddl augmente (n augmente), ce qui corresponda à |Tcrit| d'un test qui suit la loi de distribution normale (bilatérale, α = 0.05). Ainsi, avec un nombre élevé d'échantillons, l'intervalle pour le test de Student devient presque équivalent à [-1.96, 1.96].
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/7aaa8773-cc68-47f8-aed8-84e28105fb8d)
 
