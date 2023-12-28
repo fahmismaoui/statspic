@@ -40,6 +40,11 @@ Si notre Tobs > Tcrit = 3.841, on va rejeter l’hypothèse H0, et on va dire qu
 
 (Ce que nous avons fait ici est la comparaison avec la Tcrit, c'est à dire la comparaison avec la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 
+En pratique, on peut appliquer cette méthode qui utilise les tableaux de conversion spécifique pour chaque test, afin de déterminer les Tcrit, et donc déterminer l'intervalle de confiance:
+
+Pour un test bilatéral: l'intervalle de confiance est [-Tcrit, +Tcrit]
+
+Pour un test unilateral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon la direction de la comparaison
 
 
 __**II.Plus de détails**__
@@ -94,11 +99,17 @@ Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut 
 
 ◉ __**Nature unilatérale ou bilatérale**__ : Cela dépond de la direction de comparaison.
 
-◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
+◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > proportion(B).
 
 A noter, la régle de décision dans ce cas est de voir si Tobs > Tcrit.
 
+_Exemple: On veux savoir si un traitement A a augmenté la proportion des survivant du cancer de poumon après 1 ans du traitement par rapport à un traitement B de référence (Gold Standard). Dans ce cas, on veux savoir si:_
+
+_Proportion des survivant après 1 an (traitement A) > Proportion des survivant après 1 an (traitement B de référence)._
+
 Dans le cas contraire, si on a voulu savoir si proportion(A) < valeur de référence, la règle de décision serai Tobs < Tcrit.
+
+_Exemple: Supposant qu'on sait la proportion des cas graves du COVID-19 à travers des études antérieures (notre valeur de référence).  On veux savoir si la proportion des cas graves du COVID-19 a diminué après une compagne de vaccination._
 
 Pour ne pas compliquer la vie, on peut décider dans les deux situations (proportion(A) > valeur de référence et proportion(A) < valeur de référence) par la règle suivante:
 
