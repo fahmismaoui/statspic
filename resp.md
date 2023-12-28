@@ -4,9 +4,9 @@ Tout d'abord, il est important de souligner que l'intervalle de confiance n'est 
 
 Cependant, il est essentiel de noter que si le nombre d'observations (n) est faible, l'intervalle de confiance du test de Student aura tendance à être plus large. C'est car ce test dépend aussi du degré de liberté (Pour ce test : ddl = n-1).
 
-Le principe général de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique. Si Tobs n'appartient pas à cet intervalle de confiance :
+Le principe général de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique (par exemple, Tcrit = 1.96). Si Tobs n'appartient pas à cet intervalle de confiance :
 
-c’est-à-dire Tobs ∉ [-Tcrit,Tcrit], (Par exemple, Tcrit = 1.96)
+c’est-à-dire Tobs ∉ [-Tcrit,Tcrit]
 
 c’est-à-dire Tobs ∉ [-1.96, 1.96]
 
