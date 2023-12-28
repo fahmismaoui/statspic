@@ -247,7 +247,7 @@ _Density : Densité de probabilité (je rappelle que les visualisations illustre
 
 _L'intervalle de confiance est coloré en rouge_
 
-Dans le tableau de conversion suivant (spécifique pour un test de Student bilatéral), on peut observer que |Tcrit| pour α = 0.05 tend à s'approcher de la valeur 1.96 lorsque le ddl augmente (n augmente), ce qui corresponda à |Tcrit| d'un test qui suit la loi de distribution normale (bilatérale, α = 0.05). Ainsi, avec un nombre élevé d'échantillons, l'intervalle pour le test de Student devient presque équivalent à [-1.96, 1.96].
+Dans le tableau de conversion suivant (spécifique pour un test de Student bilatéral), on peut observer que |Tcrit| pour α = 0.05 tend à s'approcher de la valeur 1.96 lorsque le ddl augmente (n augmente), ce qui correspond à |Tcrit| d'un test qui suit la loi de distribution normale (bilatérale, α = 0.05). Ainsi, avec un nombre élevé d'échantillons, l'intervalle pour le test de Student devient presque équivalent à [-1.96, 1.96].
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/7aaa8773-cc68-47f8-aed8-84e28105fb8d)
 
