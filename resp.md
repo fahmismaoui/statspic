@@ -1,9 +1,10 @@
 __**I.Réponse directe aux questions**__
 
-Tout d'abord, il est important de souligner que l'intervalle de confiance n'est pas toujours défini comme [-1.96, 1.96]. L'intervalle de confiance dépend du niveau de signification α, de la nature uni/bilatérale, et, pour certains tests, du degré de liberté. Cet intervalle spécifique [-1.96, 1.96] correspond à un test bilatéral avec un niveau de signification α de 0.05. Cela s'applique notamment aux tests de comparaison de proportion/moyenne à une valeur de référence, de comparaison de deux proportions, et de comparaison de deux moyennes (test de Student pour échantillons appariés/indépendants) lorsque le nombre d'observations est très élevé. 
-Cependant, il est essentiel de noter que pour des échantillons avec un nombre d'observations plus faible, l'intervalle de confiance du test de Student aura tendance à être plus large. Dans cette situation, il dépend aussi du degré de liberté (Pour ce test : ddl = n-1).
+Tout d'abord, il est important de souligner que l'intervalle de confiance n'est pas toujours défini comme [-1.96, 1.96]. L'intervalle de confiance dépend du niveau de signification α, de la nature uni/bilatérale, et, pour certains tests, du degré de liberté. Cet intervalle spécifique [-1.96, 1.96] correspond à un test bilatéral avec un niveau de signification α de 0.05. Cela s'applique notamment aux test de comparaison d'une proportion à une valeur de référence, test de comparaison de deux proportions, ainsi que le test de comparaison de moyennes (test T de Student) lorsque le nombre d'observations est très élevé. 
 
-Le principe général de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique (par exemple : Tcrit = 1.96). Si Tobs n'appartient pas à cet intervalle de confiance :
+Cependant, il est essentiel de noter que si le nombre d'observations (n) est faible, l'intervalle de confiance du test de Student aura tendance à être plus large. C'est car ce test dépend aussi du degré de liberté (Pour ce test : ddl = n-1).
+
+Le principe général de tous ces tests repose sur la comparaison de la valeur du test statistique (appelé statistique du test ou Tobs) avec une valeur critique (par exemple : Tcrit = 1.96). Si Tobs n'appartient pas à cet intervalle de confiance:
 
 c’est-à-dire Tobs ∉ [-1.96, 1.96]
 
@@ -15,11 +16,11 @@ Dans ce cas, on peut rejeter l'hypothèse H0.
 
 Une autre méthode est la détermination d’une probabilité appelée « p-valeur », qu'on va comparer avec le niveau de signification α. À noter qu’on ne peut réaliser ce calcul qu’en utilisant des logiciels, puisque l’équation est complexe.
 
-Ces deux méthodes s’appliquent au test Chi-deux de Pearson. Le principe de ce test repose sur la comparaison des valeurs observées avec des valeurs théoriques attendues si H0 est vrai. Une particularité du test Chi-deux c’est que la Tcrit dépend du niveau de signification α et du degré de liberté qui se calcule de la façon suivante :
+Concernant le test Chi-deux de Pearson: Le principe de ce test repose sur la comparaison des valeurs observées avec des valeurs théoriques attendues si H0 est vrai. Une particularité du test Chi-deux c’est que la Tcrit dépend du niveau de signification α et du degré de liberté qui se calcule de la façon suivante :
 
-Ddl = (r-1)(c-1) ; avec r : nombre de lignes, c : nombre de colonnes
+ddl = (r-1)(c-1) ; avec r : nombre de lignes, c : nombre de colonnes
 
-Une fois que l'on connaît le ddl et que l'on a choisi le niveau de signification α, on peut utiliser un tableau de conversion pour déterminer la valeur Tcrit. 
+Une fois qu'on connait le ddl et que on a choisi le niveau de signification α, on peut utiliser un tableau de conversion pour déterminer la valeur Tcrit (le tableau suivant est spécifique du test Chi-deux). 
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/dd51c338-2d99-471a-bfbe-b87eb45cecdb)
 
@@ -28,7 +29,7 @@ Si Tobs > Tcrit, donc on rejette l’hypothèse H0.
 
 Par exemple, si l'on veut savoir s'il y a une association entre le fait de fumer et le sexe, on va avoir un tableau 2x2 (fumeur/non-fumeur X homme/femme) :
 
-Ddl = (2 * 1) * (2 * 1) = 1
+Ddl = (2 - 1) * (2 - 1) = 1
 
 Supposant qu’on a choisi alpha = 0.05, la Tcrit selon le tableau est :
 
@@ -40,11 +41,15 @@ Si notre Tobs > Tcrit = 3.841, on va rejeter l’hypothèse H0, et on va dire qu
 
 (Ce que nous avons fait ici est la comparaison avec la Tcrit, c'est à dire la comparaison avec la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 
-En pratique, on peut appliquer cette méthode qui utilise les tableaux de conversion spécifiques pour chaque test, afin de déterminer les Tcrit, et donc déterminer l'intervalle de confiance:
+En pratique, on peut appliquer cette méthode en utilisant des tableaux de conversion spécifiques pour chaque test, afin de déterminer les Tcrit.
+
+Une fois la Tcrit est déterminé, on peut déterminer l'intervalle de confiance:
 
 Pour un test bilatéral: l'intervalle de confiance est [-Tcrit, +Tcrit]
 
 Pour un test unilateral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon la direction de la comparaison
+
+Par la suite, on peut rejeter l'hypothèse H0 si Tobs n'appartient pas à l'intervalle de confiance, ou tout simplement si |Tobs| > |Tcrit|.
 
 
 __**II.Plus de détails**__
