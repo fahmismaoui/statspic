@@ -253,7 +253,7 @@ Dans le tableau de conversion suivant (spécifique pour un test de Student bilat
 
 **3.Autres tests statistiques**
 
-Il existe des tests non-paramètriques qu'on peut utiliser si on ne peut pas utiliser les tests paramètriques (par exemple, si la condition de Normalité des observations n'est pas valide).
+Il existe des tests non-paramétriques qui peuvent être employés lorsque l'utilisation des tests paramétriques n'est pas possible (par exemple, si la condition de Normalité des observations n'est pas valide).
 
 Ces tests ne se basent pas sur une loi de distribution spécifique (ex: Loi normale, Loi de Student), et sont moins robustes que les tests paramétriques.
 
