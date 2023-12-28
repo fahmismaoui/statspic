@@ -154,8 +154,23 @@ Par exemple, le test Z de proportions (1 proportion à une valeur de référence
 
 Cependant, le test de comparaison de moyenne (test de Student) se base sur une loi différente : la loi de distribution de Student. L'aspect de la courbe de distribution dans ce cas dépend du degré de liberté (et donc du nombre d'observations, puisque ici ddl=n-1). C'est pourquoi l'intervalle de confiance (d'acceptation) varie en fonction du ddl pour ce test.
 
-Une particularité de la loi de distribution de Student est qu'elle devient très similaire à une loi de distribution normale lorsque n est très élevé, comme indiqué dans la figure suivante.
+Une particularité de la loi de distribution de Student est qu'elle devient très similaire à une loi de distribution normale lorsque le ddl (et donc n) est très élevé. Afin de mieux expliquer ces concepts, j'ai généré les figures suivantes.
 
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/85ab7969-1e1f-403b-b7cd-aa323704c915)
+
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/4a1e16dd-043c-48d5-97fa-4dad8689ccde)
+
+J'ai fait expré de mettre les figures en anglais, afin de vous familiariser avec les termes anglais:
+
+_**Annotation**_
+
+_df : degree of freedom (degré de liberté ou ddl)_
+
+_t-distribution : Distribution de la loi de Student (loi t)_
+
+_Normal distribution : Distribution de la loi de Normale_
+
+_Density : Densité de probabilité (je rappelle qu'on parle de loi de distribution de probabilité, appelé en anglais: probability distribution funtion)_
 
 Dans le tableau de conversion suivant (spécifique pour un test de Student bilatéral), on peut observer que |Tcrit| pour α = 0.05 tend à s'approcher de la valeur 1.96 à mesure que le ddl augmente (n augmente), correspondant à |Tcrit| d'un test qui suit la loi de distribution normale avec une comparaison bilatérale et α = 0.05. Ainsi, avec un nombre élevé d'échantillons, l'intervalle pour le test de Student devient presque équivalent à [-1.96, 1.96].
 
