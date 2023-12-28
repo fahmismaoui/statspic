@@ -49,7 +49,7 @@ Une fois la Tcrit est déterminé, on peut déterminer l'intervalle de confiance
 
 Pour un test bilatéral: l'intervalle de confiance est [-Tcrit, +Tcrit]
 
-Pour un test unilateral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon la direction de la comparaison
+Pour un test unilatéral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon la direction de la comparaison
 
 Par la suite, on peut rejeter l'hypothèse H0 si Tobs n'appartient pas à l'intervalle de confiance, ou tout simplement si |Tobs| > |Tcrit|.
 
@@ -61,7 +61,7 @@ Pour plus de détails, vous pouvez consulter la partie suivante, dans la quelle 
 __**II.Plus de détails**__
 
 
-**1.Principe des tests d'hypothèses paramètriques**
+**1.Principe des tests d'hypothèses paramétriques**
 
 
 De manière très schématique, très intuitive, et trop simplifiée, plusieurs tests statistiques paramétriques se basent sur une équation qui ressemble à ceci :
@@ -81,12 +81,12 @@ Par la suite, on peut décider si le test est statistiquement significative selo
 
 ◉ **Méthode de la valeur critique:** 
 
-On évalue si la statistique du test (résultat de l'équation, souvent notée Tobs) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (Tobs) n'appartient pas cet intervalle, on rejète l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
+On évalue si la statistique du test (résultat de l'équation, souvent notée Tobs) appartient ou non à un intervalle de confiance. Les bornes supérieures/inférieures de cet intervalle sont souvent appelées valeurs critiques (Tcrit). Si cette statistique du test (Tobs) n'appartient pas cet intervalle, on rejette l'hypothèse H0. Je vais détailler cet intervalle de confiance dans la section suivante.
 
 
 ◉ **Méthode de la p-valeur:** 
 
-On calcule une probabilité, et on la compare avec un niveau de signification α (classiquement 0.05). Si p-valeur < α, on rejète l'hypothèse H0. 
+On calcule une probabilité, et on la compare avec un niveau de signification α (classiquement 0.05). Si p-valeur < α, on rejette l'hypothèse H0. 
 
 
 __**Comment calculer la p-valeur?**__
@@ -124,7 +124,7 @@ _Hypothèse Alternative (H1) : La concentration du produit toxique A dans l'alim
 
 _c'est-à-dire: Concentration du produit toxique A > seuil autorisé_
 
-_Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité)._
+_Dans ce contexte, on peut choisir un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à côté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique), même si ça va augmenter notre risque de se tromper (en concluant que la concentration du produit toxique est élevé alors qu'il ne l'est pas en réalité)._
 
 
 __Exemple pratique avec α = 0.01__
@@ -148,9 +148,9 @@ _Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de séc
 
 ◌ _**Test Unilatéral**_ : Évalue une hypothèse dans une seule direction. Par exemple, on veux savoir si proportion(A) > valeur de référence.
 
-A noter, la régle de décision dans ce cas est de voir si Tobs > Tcrit.
+A noter, la règle de décision dans ce cas est de voir si Tobs > Tcrit.
 
-_Exemple: Supposant qu'on connait la proportion des survivant d'un cancer rare après 1 sans traitement (valeur de référence), à travers des données de la litérature. On veux savoir si un médicament A a augmenté la proportion des survivant du cancer de poumon après 1 ans du traitement. Dans ce cas, on veux savoir si:_
+_Exemple: Supposant qu'on connait la proportion des survivant d'un cancer rare après 1 sans traitement (valeur de référence), à travers des données de la littérature. On veut savoir si un médicament A a augmenté la proportion des survivant du cancer de poumon après 1 ans du traitement. Dans ce cas, on veut savoir si:_
 
 _Proportion des survivants après 1 an (traitement A) > valeur de référence = Proportion des survivants après 1 an (sans traitement)._
 
@@ -168,11 +168,11 @@ _Exemple: Supposant qu'on sait la proportion des cas graves du COVID-19 à trave
 
 _Exemple :  On veux savoir si la proportion des fumeurs dans notre pays (on effectue un échantillonnage) est différente de celles dans l'Algérie (valeur de référence connu à travers des études publiés).
 
-A noter, si le test est bilatéral, l'intervale de confiance est **symétrique**.
+A noter, si le test est bilatéral, l'intervalle de confiance est **symétrique**.
 
 C'est à dire, la valeur absolue de la |Tcrit_borne_inférieure| = |Tcrit_borne_supérieure| (on va la noter en tant que |Tcrit|)
 
-Exemple: L'intervalle de confiance (d'acceptation) du test Z de comparaison d'une proportion à une valeur de réfèrence qui est **bilatéral** avec un niveau de signification **α = 0.05** est égale à [-1.96, 1.96].
+Exemple: L'intervalle de confiance (d'acceptation) du test Z de comparaison d'une proportion à une valeur de référence qui est **bilatéral** avec un niveau de signification **α = 0.05** est égale à [-1.96, 1.96].
 
 On peut voir que c'est un intervalle symétrique 
 
@@ -180,7 +180,7 @@ On peut voir que c'est un intervalle symétrique
 
 |-1.96| = |1.96|
 
-Dans ce cas, on veux savoir si Tobs ∉ [-1.96, 1.96] pour rejeter H0 (∉: n'appartient pas à).
+Dans ce cas, on veut savoir si Tobs ∉ [-1.96, 1.96] pour rejeter H0 (∉: n'appartient pas à).
 
 c’est-à-dire Tobs < -1.96 et Tobs > 1.96
 
@@ -194,11 +194,11 @@ __*=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche à savoi
 
 Pour un test bilatéral: l'intervalle de confiance est [-Tcrit, +Tcrit]
 
-Pour un test unilateral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon la direction de la comparaison
+Pour un test unilatéral: c'est soit [-Tcrit, +∞], soit [-∞, +Tcrit], selon la direction de la comparaison
 
 Dans les deux cas: règle de décision: |Tobs| > |Tcrit| pour rejeter l'hypothèse H0
 
-_*NB*_
+**NB**
 
 Pour certains tests, comme le test de Student (comparaison de moyennes), l'intervalle de confiance dépond aussi d'un paramètre appelé **degré de liberté (ddl)** (dans le cas du test de Student: ddl = n - 1 , avec n: nombre d'observations).
 
@@ -206,7 +206,7 @@ Pour certains tests, comme le test de Student (comparaison de moyennes), l'inter
 
 **Quelques remarques concernant le raisonnement statistique**
 
-Dans le passé, les statisticiens utilisaient des tableaux de conversion pour approximer la Tcrit correspondant à chaque niveau de siginfication α. Puis, on comparait la statistique du test (Tobs) avec cette Tcrit. Un exemple de tableaux de conversion (pour test de student pour 2 échantillons indépendants) est ci-dessous.
+Dans le passé, les statisticiens utilisaient des tableaux de conversion pour approximer la Tcrit correspondant à chaque niveau de signification α. Puis, on comparait la statistique du test (Tobs) avec cette Tcrit. Un exemple de tableaux de conversion (pour test de student pour 2 échantillons indépendants) est ci-dessous.
 
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/236175e4-806b-405c-9ca3-2330add3dfa2)
 
@@ -225,7 +225,7 @@ Tout test qui se base sur une **loi de distribution normale** (de moyenne 0 et d
 
 Par exemple, le test Z de proportions (pour comparer 1 proportion à une valeur de référence, ou comparer 2 proportions) se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
 
-Cependant, le test de comparaison de moyenne (test de Student) se base sur une loi différente : la loi de distribution de Student. L'aspect de la courbe de distribution dans ce cas dépend du degré de liberté (et donc du nombre d'observations, puisque ici ddl=n-1). C'est pourquoi l'intervalle de confiance (d'acceptation) varie en fonction du ddl pour ce test.
+Cependant, le test de comparaison de moyenne (test de Student) se base sur une loi différente : la loi de distribution de Student. L'aspect de la courbe de distribution dans ce cas dépend du degré de liberté (et donc du nombre d'observations, puisqu'ici ddl = n - 1). C'est pourquoi l'intervalle de confiance (d'acceptation) varie en fonction du ddl pour ce test.
 
 Une particularité de la loi de distribution de Student est qu'elle devient très similaire à une loi de distribution normale lorsque le ddl (et donc n) est élevé. Afin de mieux expliquer ces concepts, j'ai généré les figures suivantes.
 
@@ -243,7 +243,9 @@ _t-distribution : Distribution de la loi de Student (loi t)_
 
 _Normal distribution : Distribution de la loi de Normale_
 
-_Density : Densité de probabilité (je rappelle qu'on parle de loi de distribution de probabilité, appelé en anglais: probability distribution funtion)_
+_Density : Densité de probabilité (je rappelle que les visualisations illustrent différentes lois de distribution de probabilité, appelé en anglais: probability distribution funtions)_
+
+_L'intervalle de confiance est coloré en rouge_
 
 Dans le tableau de conversion suivant (spécifique pour un test de Student bilatéral), on peut observer que |Tcrit| pour α = 0.05 tend à s'approcher de la valeur 1.96 lorsque le ddl augmente (n augmente), ce qui corresponda à |Tcrit| d'un test qui suit la loi de distribution normale (bilatérale, α = 0.05). Ainsi, avec un nombre élevé d'échantillons, l'intervalle pour le test de Student devient presque équivalent à [-1.96, 1.96].
 
