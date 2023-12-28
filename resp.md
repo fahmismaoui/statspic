@@ -102,10 +102,6 @@ Je vais expliquer comment choisir le niveau de signification et la nature uni/bi
 
 C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
 
-**NB**
-
-Il y a aussi β (Erreur de Type II ou de 2ème espèce), qui est la probabilité d’accepter H0 alors qu’elle est fausse. Si α augmente, β diminue est vis-verça.
-
 
 __Exemple pratique avec α = 0.1__
 
