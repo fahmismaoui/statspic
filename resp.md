@@ -126,7 +126,7 @@ _H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace 
 
 _c'est-à-dire: Efficacité nouveau dispositif ≤ Efficacité dispositifs existants_
 
-_H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs existants, offrant une meilleure protection. 
+_H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs de sécurité existants.
 
 _c'est-à-dire: Efficacité nouveau dispositif > Efficacité dispositifs existants_
 
