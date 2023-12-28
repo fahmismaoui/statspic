@@ -122,9 +122,13 @@ _Considérons une étude dont les conclusions pourraient avoir un impact signifi
 
 _Hypothèses :_
 
-_H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace que les dispositifs existants, ne présentant aucune amélioration significative._
+_H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace ou moins efficace que les dispositifs existants, ne présentant aucune amélioration significative._
 
-_H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs existants, offrant une meilleure protection._
+(Efficacité nouveau dispositif ≤ Efficacité dispositifs existants)_
+
+_H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs existants, offrant une meilleure protection. 
+
+(Efficacité nouveau dispositif > Efficacité dispositifs existants)_
 
 _Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de sécurité est efficace alors qu'il ne l'est pas) peut avoir des conséquences dévastatrices. Ici, on peut choisir un niveau de signification strict tel que α = 0.01, voir même α = 0.001._
 
