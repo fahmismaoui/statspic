@@ -40,7 +40,7 @@ Si notre Tobs > Tcrit = 3.841, on va rejeter l’hypothèse H0, et on va dire qu
 
 (Ce que nous avons fait ici est la comparaison avec la Tcrit, c'est à dire la comparaison avec la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 
-En pratique, on peut appliquer cette méthode qui utilise les tableaux de conversion spécifique pour chaque test, afin de déterminer les Tcrit, et donc déterminer l'intervalle de confiance:
+En pratique, on peut appliquer cette méthode qui utilise les tableaux de conversion spécifiques pour chaque test, afin de déterminer les Tcrit, et donc déterminer l'intervalle de confiance:
 
 Pour un test bilatéral: l'intervalle de confiance est [-Tcrit, +Tcrit]
 
