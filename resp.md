@@ -41,9 +41,12 @@ Si notre Tobs > Tcrit = 3.841, on va rejeter l’hypothèse H0, et on va dire qu
 (Ce que nous avons fait ici est la comparaison avec la Tcrit, c'est à dire la comparaison avec la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 
 
+
 __**II.Plus de détails**__
 
+
 **1.Principe des tests d'hypothèses paramètriques**
+
 
 De manière très schématique, très intuitive, et trop simplifiée, plusieurs tests statistiques paramétriques se basent sur une équation qui ressemble à ceci :
 
@@ -73,7 +76,10 @@ L'équation qui détermine la p-valeur, en se basant sur la statistique du test 
 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
 
+
+
 **2.Test d'hypothèse et intervalle de confiance (d'acceptation)**
+
 
 L'intervalle de confiance (ou intervalle d'acceptation) dépend du __niveau de signification__ choisi (α) ainsi que de la nature __unilatérale ou bilatérale__ du test. 
 
@@ -109,9 +115,10 @@ Exemple: L'intervalle de confiance (d'acceptation) du test Z de comparaison d'un
 On peut voir que c'est un intervalle symétrique 
 
 |Tcrit_borne_inférieure| = |Tcrit_borne_supérieure|
+
 |-1.96| = |1.96|
 
-Dans ce cas, on veux savoir si Tobs ∉ [-1.96, 1.96] (∉: n'appartient pas à) pour rejeter H0.
+Dans ce cas, on veux savoir si Tobs ∉ [-1.96, 1.96] pour rejeter H0 (∉: n'appartient pas à).
 
 c’est-à-dire Tobs < -1.96 et Tobs > 1.96
 
@@ -168,6 +175,7 @@ Ex: Test de Wilcoxon: équivalent non-paramétrique du test de Student pour 2 é
 
 
 
+**Référence à consulter**
 
 Pour plus d'informations sur les tests statistiques, vous pouvez consulter la référence suivante : 
 
