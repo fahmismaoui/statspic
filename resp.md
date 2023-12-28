@@ -166,7 +166,7 @@ _Exemple: Supposant qu'on sait la proportion des cas graves du COVID-19 à trave
 
 ◌ _**Test Bilatéral**_ : Évalue une hypothèse dans les deux directions. Par exemple, on veux savoir si proportion(A) ≠ valeur de référence.
 
-_Exemple :  On veux savoir si la proportion des fumeurs dans notre pays (on effectue un échantillonnage) est différente de celles dans l'Algérie (valeur de référence connu à travers des études publiés).
+_Exemple :  On veux savoir si la proportion des fumeurs dans notre pays (on effectue un échantillonnage) est différente de celles dans l'Algérie (valeur de référence connu à travers des études publiés)._
 
 A noter, si le test est bilatéral, l'intervalle de confiance est **symétrique**.
 
