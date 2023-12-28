@@ -216,7 +216,7 @@ Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet
 
 **Pourquoi l'intervalle de confiance peut varier entre les tests statistiques?**
 
-Sans entrer trop dans les détails, il est crucial de comprendre que les **tests statistiques paramétriques** mentionnés ci-dessus reposent sur des **lois de distribution** spécifiques.
+Sans entrer trop dans les détails, les **tests statistiques paramétriques** mentionnés ci-dessus reposent sur des **lois de distribution** spécifiques.
 En effet, par définition, un test paramétrique est un test statistique qui suppose une **distribution spécifique** des données sous-jacentes.
 
 Tout test qui se base sur une **loi de distribution normale** (de moyenne 0 et d'écart-type 1, notée N(0,1)), présente les mêmes intervalles de confiance (d'acceptation). Pour expliquer comment cet intervalle de confiance dépend des paramètres alpha et de la nature uni/bilatérale, j’ai créé les visualisations suivantes.
