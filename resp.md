@@ -10,7 +10,7 @@ c’est-à-dire Tobs ∉ [-Tcrit , +Tcrit] (avec ∉: n'appartient pas à)
 
 c’est-à-dire Tobs ∉ [-1.96, 1.96]
 
-c’est-à-dire Tobs < -1.96 et Tobs > 1.96
+c’est-à-dire Tobs < -1.96 ou Tobs > 1.96
 
 c’est-à-dire |Tobs| > |Tcrit|=1.96
 
