@@ -1,4 +1,4 @@
-__**I.Réponse directe aux questions**__
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/408fa8a8-a180-416c-935e-dbc35215f32a)![image](https://github.com/fahmismaoui/statspic/assets/64672385/544c46ae-d518-42b0-81c5-c36e0d181844)__**I.Réponse directe aux questions**__
 
 Tout d'abord, il est important de souligner que l'intervalle de confiance n'est pas toujours défini comme [-1.96, 1.96]. L'intervalle de confiance dépend du niveau de signification α, de la nature uni/bilatérale, et, pour certains tests, du degré de liberté. Cet intervalle spécifique [-1.96, 1.96] correspond à un test bilatéral avec un niveau de signification α de 0.05. Cela s'applique notamment aux test de comparaison d'une proportion à une valeur de référence, test de comparaison de deux proportions, ainsi que les tests de comparaison de moyennes (tests T de Student, que ce soit pour échantillons indépendants ou appariées) lorsque le nombre d'observations est élevé. 
 
@@ -91,7 +91,6 @@ L'équation qui détermine la p-valeur, en se basant sur la statistique du test 
 **NB**: *Il ne faut pas confondre "test statistique" et "statistique du test". En effet, "statistique du test" correspond aux résultat de l'équation du "test statistique".*
 
 
-
 **2.Test d'hypothèse et intervalle de confiance (d'acceptation)**
 
 
@@ -101,9 +100,49 @@ Je vais expliquer comment choisir le niveau de signification et la nature uni/bi
 
 ◉ __**Niveau de signification α**__ (également appelé Erreur de Type I ou de 1er espèce) : 
 
-C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Cependant, une valeur trop faible peut conduire à ne pas détecter une différence réelle (je vais vous donner un exemple juste par la suite). 
+C’est le niveau de confiance souhaité. Plus il est petit, plus on est sûr de rejeter l'hypothèse H0. Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
 
-Généralement, le niveau de signification α choisi est de 0.05. Mais, α peut être ajusté selon la rigueur souhaitée, comme α = 0.01 (1%) pour un test plus strict ou α = 0.10 (10%) pour un test moins strict.
+**NB**
+
+Il y a aussi β (Erreur de Type II ou de 2ème espèce), qui est la probabilité d’accepter H0 alors qu’elle est fausse. Si α augmente, β diminue est vis-verça.
+
+
+__Exemple pratique avec α = 0.1__
+
+Considérons une étude dans le domaine de la sécurité alimentaire, évaluant la présence d'un produit toxique A dans un aliment commercialisé.
+
+Scénario :
+
+Hypothèse Nulle (H0) : La concentration du produit toxique A dans l'aliment est conforme aux normes de sécurité établies.
+
+Hypothèse Alternative (H1) : La concentration du produit toxique A dans l'aliment dépasse les normes de sécurité établies.
+
+Dans ce contexte, on peut choisr un niveau de signification plus élevé, tel que α = 0.1, afin de ne pas passer à coté d'une potentielle toxicité de l'aliment (ne pas passer à coté d'une concentration dangereuse du produit toxique).
+
+
+Considérons une étude clinique préliminaire évaluant un nouveau traitement contre une maladie grave et potentiellement mortelle. Dans ce contexte, on ne veut pas manquer de détecter une amélioration de la santé des patients suite au traitement. Ici, on peut choisir un niveau de signification légèrement plus élevé (par exemple α = 0.1), même si ça va augmenter notre risque de se tromper (en concluant que le médicament est efficae alors qu'il ne l'est pas en réalité).
+
+Imaginons une étude clinique évaluant un nouveau traitement contre une maladie grave et potentiellement mortelle. Dans ce contexte, les conséquences d'une erreur de type I (conclure à tort que le traitement est efficace) sont moins graves que celles d'une erreur de type II (ne pas détecter une efficacité réelle du traitement). Dans cette situation, les chercheurs pourraient choisir un niveau de signification plus élevé, tel que α = 0.1, pour minimiser le risque de manquer une amélioration significative de la santé des patients.
+
+
+__Exemple pratique avec α = 0.01__
+
+Considérons une étude dont les conclusions pourraient avoir un impact significatif sur la sécurité publique, telle que l'évaluation de l'efficacité d'un nouveau dispositif de sécurité dans une centrale nucléaire. 
+
+Hypothèses :
+
+H0 (Hypothèse Nulle) : Le nouveau dispositif de sécurité est aussi efficace que les dispositifs existants, ne présentant aucune amélioration significative.
+
+H1 (Hypothèse Alternative) : Le nouveau dispositif de sécurité est significativement plus performant que les dispositifs existants, offrant une meilleure protection.
+
+Dans ce scénario, la moindre erreur (se tromper et dire que dispositif de sécurité est efficace alors qu'il ne l'est pas) peut avoir des conséquences dévastatrices. Ici, on peut choisir un niveau de signification strict tel que α = 0.01, voir même α = 0.001. 
+
+
+
+d'un nouveau modèle de voiture à conduite automatique. Ici, on veut savoir si son système d'évitement de collision est efficace.
+
+Implications : Si on conclu à tort que le système est efficace alors qu'il ne l'est pas pourraient entraîner des accidents graves. Dans ce cas, on peut choisir un niveau de signification strict comme α = 0.01 pour garantir un haut niveau de confiance dans les affirmations de sécurité.
+
 
 
 ◉ __**Nature unilatérale ou bilatérale**__ : Cela dépond de la direction de comparaison.
