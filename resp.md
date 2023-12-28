@@ -20,8 +20,7 @@ Ces deux méthodes s’appliquent au test Chi-deux de Pearson. Le principe de ce
 Ddl = (r-1)(c-1) ; avec r : nombre de lignes, c : nombre de colonnes
 
 Une fois que l'on connaît le ddl et que l'on a choisi le niveau de signification α, on peut utiliser un tableau de conversion pour déterminer la valeur Tcrit. 
-![image](https://github.com/fahmismaoui/statspic/assets/64672385/51388d37-df64-4ea0-af0e-a243fc75e37e)
-
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/c5a36aa6-1b2a-4544-a1f0-f91ccfc24e73)
 
 
 Une fois la valeur Tobs est déterminée en utilisant l’équation du test Chi-deux, on peut comparer Tobs avec Tcrit :
@@ -38,6 +37,7 @@ Tcrit = 3.841 (C'est la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 Si notre Tobs > Tcrit = 3.841, on va rejeter l’hypothèse H0, et on va dire qu'il y a une association statistiquement significative entre le fait de fumer et le sexe.
 
 (Ce que nous avons fait ici est la comparaison avec la Tcrit, c'est à dire la comparaison avec la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
+
 
 __**II.Plus de détails**__
 
@@ -114,6 +114,11 @@ c’est-à-dire |Tobs| > |Tcrit|=1.96 pour rejeter l'hypothèse H0.
 
 __*=> DONC, dans les deux cas (test unilatéral/bilatéral), on cherche à savoir si |Tobs| > |Tcrit| pour rejeter l'hypothèse H0.*__
 
+_*NB*_
+
+Pour certains tests, comme le test de Student (comparaison de moyennes), l'intervalle de confiance dépond aussi d'un paramètre appelé **degré de liberté (ddl)** (dans le cas du test de Student: ddl = n - 1 , avec n: nombre d'observations).
+
+
 
 **Quelques remarques concernant le raisonnement statistique**
 
@@ -122,6 +127,31 @@ Dans le passé, les statisticiens utilisaient des tableaux de conversion pour ap
 ![image](https://github.com/fahmismaoui/statspic/assets/64672385/236175e4-806b-405c-9ca3-2330add3dfa2)
 
 Aujourd'hui, avec les avancées informatiques, l'utilisation de logiciels permet d'effectuer ce calcul complexe et de déterminer la p-valeur de manière plus précise et efficace.
+
+
+**Pourquoi l'intervalle de confiance peut varier entre les tests statistiques**
+
+Sans entrer trop dans les détails, il est crucial de comprendre que les tests statistiques mentionnés ci-dessus reposent sur des lois de distribution spécifiques.
+
+Tout test qui suit une loi de distribution normale (de moyenne 0 et d'écart-type 1, notée N(0,1)), présente les mêmes intervalles de confiance (d'acceptation). Pour expliquer comment cet intervalle de confiance dépend des paramètres alpha et de la nature uni/bilatérale, j’ai créé les visualisations suivantes.
+
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/42fb152e-6c28-4aa9-87fb-b92c2200bc53)
+
+
+Par exemple, le test Z de proportion se fonde sur la loi de distribution normale. Cela peut vous paraitre bizarre, puisque les proportions se calculent à partir de variables binaires (ex: sexe = homme/femme) qui suivent une loi de distribution binomiale. Cependant, pour simplifier les choses, on peut approximer cette loi binomiale en loi normale, surtout si le nombre d'observations n'est pas faible.
+
+Cependant, le test de comparaison de moyenne (test de Student) se base sur une loi différente : la loi de distribution de Student. L'aspect de la courbe de distribution dans ce cas dépend du degré de liberté (et donc du nombre d'observations, puisque ici ddl=n-1). C'est pourquoi l'intervalle de confiance (d'acceptation) varie en fonction du ddl pour ce test.
+
+Une particularité de la loi de distribution de Student est qu'elle devient très similaire à une loi de distribution normale lorsque n est très élevé, comme indiqué dans la figure suivante.
+
+
+Dans le tableau de conversion suivant (spécifique pour un test de Student bilatéral), on peut observer que |Tcrit| pour α = 0.05 tend à s'approcher de la valeur 1.96 à mesure que le ddl augmente (n augmente), correspondant à |Tcrit| d'un test qui suit la loi de distribution normale avec une comparaison bilatérale et α = 0.05. Ainsi, avec un nombre élevé d'échantillons, l'intervalle pour le test de Student devient presque équivalent à [-1.96, 1.96].
+
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/7aaa8773-cc68-47f8-aed8-84e28105fb8d)
+
+
+
+
 
 Par la suite, je vais aborder chaque test à part.
 
