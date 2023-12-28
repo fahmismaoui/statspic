@@ -20,8 +20,8 @@ Ces deux méthodes s’appliquent au test Chi-deux de Pearson. Le principe de ce
 Ddl = (r-1)(c-1) ; avec r : nombre de lignes, c : nombre de colonnes
 
 Une fois que l'on connaît le ddl et que l'on a choisi le niveau de signification α, on peut utiliser un tableau de conversion pour déterminer la valeur Tcrit. 
-![image](https://github.com/fahmismaoui/statspic/assets/64672385/c5a36aa6-1b2a-4544-a1f0-f91ccfc24e73)
 
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/dd51c338-2d99-471a-bfbe-b87eb45cecdb)
 
 Une fois la valeur Tobs est déterminée en utilisant l’équation du test Chi-deux, on peut comparer Tobs avec Tcrit :
 Si Tobs > Tcrit, donc on rejette l’hypothèse H0.
@@ -31,6 +31,8 @@ Par exemple, si l'on veut savoir s'il y a une association entre le fait de fumer
 Ddl = (2 * 1) * (2 * 1) = 1
 
 Supposant qu’on a choisi alpha = 0.05, la Tcrit selon le tableau est :
+
+![image](https://github.com/fahmismaoui/statspic/assets/64672385/c5a36aa6-1b2a-4544-a1f0-f91ccfc24e73)
 
 Tcrit = 3.841 (C'est la valeur du test Chi-deux au Ddl de 1, avec alpha = 0.05)
 
