@@ -261,7 +261,7 @@ Ces tests ne se basent pas sur une loi de distribution spécifique (ex: Loi norm
 
 Ex: Test de Mann-Whitney: équivalent non-paramétrique du test de Student pour 2 échantillons indépendants
 
-Ex: Test de Wilcoxon: équivalent non-paramétrique du test de Student pour 2 échantillons appariées
+Ex: Test de Wilcoxon: équivalent non-paramétrique du test de Student pour 2 échantillons appariés
 
 
 
